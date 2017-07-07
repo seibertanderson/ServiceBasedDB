@@ -4,8 +4,9 @@
     {
         public static string StringConexao()
         {
-            //caminho do arquivo do banco
-            string conexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\anderson.seibert\documents\visual studio 2015\Projects\ServiceBasedDBExample\Dados\DB.mdf;Integrated Security=True";
+            //caminho do arquivo do banco            
+            string caminhoBanco = @"C:\Users\anderson.seibert\Source\Repos\ServiceBasedDB\Dados\DB.mdf";
+            string conexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+caminhoBanco+";Integrated Security=True";
             return conexao;
         }
     }
