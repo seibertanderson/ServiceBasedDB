@@ -14,7 +14,16 @@ namespace Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuPrincipal());
+            //Application.Run(new MenuPrincipal());
+            //Application.Run(new Login());
+            DialogResult result;
+            var loginForm = new Login();
+            result = loginForm.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                // login was successful
+                Application.Run(new MenuPrincipal());
+            }
         }
     }
 }

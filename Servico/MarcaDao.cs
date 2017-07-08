@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace Servico
 {
-    public class MarcaDao
+    public class MarcaDao : IRepository<Marca>
     {
         public Marca Inserir(Marca marca)
         {

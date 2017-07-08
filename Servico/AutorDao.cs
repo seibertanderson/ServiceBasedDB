@@ -1,14 +1,11 @@
 ﻿using Entidade;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Servico
 {
-    public class AutorDao
+    public class AutorDao : IRepository<Autor>
     {
         public Autor Inserir(Autor autor)
         {
@@ -64,6 +61,16 @@ namespace Servico
 
                 throw ex;
             }
+        }
+
+        public List<Autor> ListarTodas()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Autor BuscarId(int codigo)
+        {
+            throw new NotImplementedException();
         }
     }
 }
